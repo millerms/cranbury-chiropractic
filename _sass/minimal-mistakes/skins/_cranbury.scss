@@ -1,0 +1,26 @@
+/* Start from a clean, readable base */
+@import "minimal-mistakes/skins/mint";
+
+/* Cranbury custom palette (chiro-friendly greens + calm neutrals) */
+$primary-color: #2a7f62;             // deep teal
+$link-color: $primary-color;
+$link-color-hover: darken($link-color, 10%);
+
+$background-color: #f7f9f8;          // soft off-white
+$text-color: #1f2933;                // near-black for contrast
+$muted-text-color: #475569;          // slate for secondary text
+$border-color: #e3e8ec;
+
+/* Header/nav + footer */
+$nav-background-color: #ffffff;
+$footer-background-color: #0f172a;   // deep slate
+$footer-text-color: #cbd5e1;
+
+/* Buttons */
+$button-background-color: $primary-color;
+$button-color: #ffffff;
+$button-border-color: transparent;
+
+/* Code blocks */
+$code-background-color: #f1f5f9;
+$code-text-color: #0f172a;

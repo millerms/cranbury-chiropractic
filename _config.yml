@@ -1,52 +1,82 @@
 # Jekyll configuration for Cranbury Chiropractic
+# Cleaned and simplified for a Minimal Mistakes site
+# Notes:
+# - Update `url` once the custom domain is live (keep baseurl empty for root)
+# - Change `minimal_mistakes_skin` to taste: default, mint, neon, air, dusk, sunrise, etc.
 
+# ----------------------
 # Site settings
+# ----------------------
+locale: en-US
 title: "Cranbury Chiropractic"
-description: "A website for Cranbury Chiropractic Center, LLC."
-url: "https://cranburychiropractic.com"
-baseurl: ""
-og_image:
+description: "Evidence-based chiropractic care in Fairfield County, CT."
+url: "https://millerms.github.io/cranbury-chiropractic"  # production URL (can be your GitHub Pages URL while testing)
+baseurl: ""                             # empty means the site is served at the domain root
+
 tagline: "Cranbury Chiropractic Center, LLC"
+logo: "/assets/images/logo.png"          # add a file at this path when ready
+
+# Social / org metadata for SEO cards
 social:
   name: "Cranbury Chiropractic"
-  image:
   links:
     - https://cranburychiropractic.com
 
+# Open Graph default image (used for social sharing)
+og_image: "/assets/images/og-default.png"
 
-# Theme settings
+# ----------------------
+# Theme & plugins
+# ----------------------
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: "zen"
+minimal_mistakes_skin: "cranbury"  # try: default, air, sunrise, dusk, neon, etc.
+
 plugins:
   - jekyll-remote-theme
-  - jekyll-data
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-data
 
+# Pagination for posts (blog)
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# ----------------------
 # Navigation
+# ----------------------
+# Update or add pages as you create them in `_pages/`
+# Each page should set `permalink:` in its front matter to match these URLs
 navigation:
   - title: "Home"
     url: "/"
-  - title: "Meetings"
-    url: "/meetings/"
-  - title: "Meditation Events"
-    url: "/meditation-events/"
-  - title: "Resources"
-    url: "/resources/"
-  - title: "Buddhist Foundations"
-    url: /buddhist-foundations/
+  - title: "Services"
+    url: "/services/"
+  - title: "Meet the Doctor"
+    url: "/doctor/"
+  - title: "New Patients"
+    url: "/new-patients/"
+  - title: "Insurance & Pricing"
+    url: "/insurance/"
   - title: "Contact"
     url: "/contact/"
+  - title: "Blog"
+    url: "/blog/"
 
+# ----------------------
 # Collections
+# ----------------------
+# Keep using `_pages/` as a collection that outputs to clean URLs
 collections:
   pages:
     output: true
     permalink: /:path/
 
-# Defaults
+# ----------------------
+# Defaults for content
+# ----------------------
 defaults:
   - scope:
       path: ""
@@ -55,7 +85,7 @@ defaults:
       layout: single
       author_profile: false
       classes: wide
-      css: "custom"
+      toc: false
 
   - scope:
       path: ""
@@ -64,58 +94,36 @@ defaults:
       layout: single
       author_profile: false
       classes: wide
-      css: "custom"
-  
+      read_time: true
+      share: true
+
+# ----------------------
 # Markdown & formatting
+# ----------------------
 markdown: kramdown
 kramdown:
   input: GFM
 
+# Optional site-wide keywords (kept concise and local)
 keywords:
   - Cranbury Chiropractic
-  - Chiropractic
-  - Cranbury
-  - Health
-  - Wellness
-  - Back Pain
-  - Neck Pain
-  - Sports Injury
-  - Auto Injury
-  - Massage Therapy
-  - Physical Therapy
-  - Rehabilitation
-  - Nutrition
-  - Exercise
-  - Lifestyle
-  - Pain Relief
-  - Spinal Adjustment
-  - Holistic Health
-  - Alternative Medicine
-  - Wellness Center
-  - Family Chiropractic
-  - Pediatric Chiropractic
   - Chiropractic Care
-  - Chiropractic Services
   - Cranbury CT
   - Norwalk CT
-  - Fairfield County
-  - Connecticut Chiropractic
-  - Health and Wellness
-  - Injury Prevention
-  - Posture Correction
-  - Ergonomics
-  - Health Education
-  - Patient Care
-  - Wellness Tips
-  - Health Blog
-  - Chiropractic Tips
+  - Back Pain Relief
+  - Neck Pain Relief
+  - Sports Injury
+  - Family Chiropractic
+  - Wellness
 
-# Exclude
+# ----------------------
+# Exclusions (do not process)
+# ----------------------
 exclude:
   - README.md
-  - RecoveryDharmaBVT/README.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
   - theme-temp
+  - _site

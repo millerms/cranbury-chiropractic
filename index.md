@@ -2,54 +2,50 @@
 layout: splash
 title: "Cranbury Chiropractic"
 author_profile: false
-excerpt: "Friendly, evidence-based chiropractic care for pain relief, performance, and family wellness in Fairfield County."
+excerpt: "Friendly, evidence-based chiropractic care including adjustments, Class IV laser therapy, balance and posture testing, and more for pain relief, performance, and family wellness in Fairfield County."
 
-# Hero header
 header:
-  overlay_color: "#000"
+  overlay_color: "#1a4d3b"
   overlay_filter: "0.35"
-  overlay_image: "/assets/images/hero.jpg" # add this image later
+  overlay_image: "/assets/images/hero.jpg"
   actions:
     - label: "Request an Appointment"
       url: "/contact/"
-    - label: "Call (203) 555-0123"
-      url: "tel:+12035550123"
+    - label: "Call (203) 846-3424"
+      url: "tel:+12038463424"
 
-# Three-up feature row (Services highlights)
 feature_row:
   - image_path: /assets/images/feature-back.jpg
-    alt: "Back & Neck Pain"
-    title: "Back & Neck Pain"
-    excerpt: "Conservative care for acute and chronic pain, with targeted manual therapy and exercise."
+    alt: "Chiropractic Care"
+    title: "Chiropractic Care"
+    excerpt: "Hands-on adjustments and targeted manual therapy to restore mobility, reduce pain, and improve function."
     url: "/services/"
     btn_label: "Learn more"
     btn_class: "btn--primary"
   - image_path: /assets/images/feature-sport.jpg
-    alt: "Sports Injury Care"
-    title: "Sports Injury Care"
-    excerpt: "Return to play faster with rehab plans for runners, cyclists, and field athletes."
+    alt: "Laser Therapy"
+    title: "Laser Therapy"
+    excerpt: "Class IV laser treatments to reduce inflammation, speed recovery, and support tissue healing."
     url: "/services/"
     btn_label: "Learn more"
     btn_class: "btn--primary"
   - image_path: /assets/images/feature-family.jpg
-    alt: "Family Care"
-    title: "Family Care"
-    excerpt: "Gentle, age-appropriate care for the whole family with a focus on function and mobility."
+    alt: "Balance and Posture Testing"
+    title: "Balance and Posture Testing"
+    excerpt: "Comprehensive assessments to identify imbalances and create corrective strategies for stability and alignment."
     url: "/services/"
     btn_label: "Learn more"
     btn_class: "btn--primary"
 
-# Secondary feature row (Trust/Experience)
 feature_row2:
   - title: "Evidence-Based Care"
-    excerpt: "We combine chiropractic adjustments, soft-tissue work, and exercise prescription aligned with current research."
+    excerpt: "We combine chiropractic adjustments, Class IV laser therapy, balance and posture testing, soft-tissue work, and exercise prescription aligned with current research."
   - title: "Personalized Plans"
     excerpt: "No one-size-fits-all. We tailor treatment to your goals, schedule, and activity level."
   - title: "Convenient Location"
     excerpt: "Easy parking and flexible hours for busy families and professionals."
 ---
 
-{% comment %} Intro copy {% endcomment %}
 <div class="page__lead" markdown="1">
 Welcome. We help people move better and feel better with clear plans and practical guidance. Whether you’re dealing with a new injury, nagging pain, or just want to stay active, we’ll meet you where you are.
 </div>
@@ -58,7 +54,5 @@ Welcome. We help people move better and feel better with clear plans and practic
 
 {% include feature_row id="feature_row2" type="center" %}
 
-<section class="cta" markdown="1">
 [Request an Appointment](/contact/){: .btn .btn--primary }  
 [Call (203) 555-0123](tel:+12035550123){: .btn }
-</section>
