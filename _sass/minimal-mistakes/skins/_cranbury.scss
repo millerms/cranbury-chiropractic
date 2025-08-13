@@ -2,25 +2,45 @@
 @import "minimal-mistakes/skins/mint";
 
 /* Cranbury custom palette (chiro-friendly greens + calm neutrals) */
-$primary-color: #2a7f62;             // deep teal
+$primary-color: #104a7d;             // rich blue-teal
 $link-color: $primary-color;
 $link-color-hover: darken($link-color, 10%);
+$secondary-color: #4f90a8;           // lighter blue-teal
 
 $background-color: #f7f9f8;          // soft off-white
-$text-color: #1f2933;                // near-black for contrast
-$muted-text-color: #475569;          // slate for secondary text
-$border-color: #e3e8ec;
+$text-color: #0f172a;                // deep slate for strong contrast
+$muted-text-color: #334155;          // darker slate for small/secondary text
+$border-color: #e2e8f0;              // neutral light border
+$muted-border-color: #cbd5e1;       // light slate for subtle borders
+$accent-color: #fbbf24;              // warm yellow for highlights
+$accent-color-hover: darken($accent-color, 10%);
+$success-color: #16a34a;             // vibrant green for success messages
+$error-color: #dc2626;               // bright red for error messages
+$warning-color: #f59e0b;             // amber for warnings
 
 /* Header/nav + footer */
 $nav-background-color: #ffffff;
-$footer-background-color: #0f172a;   // deep slate
-$footer-text-color: #cbd5e1;
+$footer-background-color: #10245b;   // solid deep slate for predictable contrast
+$footer-text-color: #e2e8f0;
+$footer-link-color: #ffffff;
+$footer-link-hover-color: lighten($footer-link-color, 10%);
+$footer-border-color: #334155;
+$header-background-color: $nav-background-color;
+$header-text-color: $text-color;
+$header-link-color: $primary-color;
+$header-link-hover-color: $link-color-hover;
+
+$overlay-color: rgba(16, 61, 45, 0.8); // semi-transparent dark green
 
 /* Buttons */
 $button-background-color: $primary-color;
 $button-color: #ffffff;
 $button-border-color: transparent;
+$button-hover-background-color: darken($button-background-color, 10%);
+$button-hover-color: #ffffff;
+$button-hover-border-color: transparent;
 
 /* Code blocks */
 $code-background-color: #f1f5f9;
-$code-text-color: #0f172a;
+$code-text-color: #0f172a; // deep slate
+$code-border-color: #cbd5e1; // neutral light border

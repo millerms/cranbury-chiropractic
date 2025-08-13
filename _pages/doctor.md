@@ -3,7 +3,7 @@ layout: splash
 title: "Meet the Doctor"
 permalink: /doctor/
 header:
-  overlay_color: "#1a4d3b"
+  overlay_color: $overlay-color
   overlay_filter: "0.2"
 excerpt: ""
 ---

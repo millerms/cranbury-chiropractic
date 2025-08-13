@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Zen skin
+   ========================================================================== */
+   
+/* Colors */
+// Soften the background by making it slightly more yellow/brown
+$background-color: #f6e8d3 !default; // slightly warmer, less bright
+$text-color: #1b2e20 !default;
+$muted-text-color: #495c49 !default;
+$primary-color: #2a7c43 !default; // darker sage green
+$border-color: mix(#fff, #5e5b4f, 75%) !default;
+$footer-background-color: #0f4c21 !default;
+$accent-color: #9b5838 !default; // warm terracotta
+$link-color: #bbbbbb !default;
+$hover-color: #bbbbbb !default; // soft grey for hover effects
+$masthead-link-color: #003f5c !default;
+$masthead-link-color-hover:  mix(#0b310b, $primary-color, 90%)!default;
+$navicon-link-color-hover:  mix(#0b310b, $primary-color, 90%)!default;
+
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+a:hover {
+  color: $hover-color !important;
+}
+
+.navicon-link:hover {
+  color: $hover-color !important;
+}
+
+// Add soft box shadows for visual depth
+.page, .page__content, .archive__item {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+// Style warm call-to-action buttons
+.btn, .btn--primary {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover, .btn--primary:hover {
+  background-color: #5a3e2b; // deep brown for contrast in footer
+  color: #fff;
+}
