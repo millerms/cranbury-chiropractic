@@ -16,6 +16,9 @@ baseurl: "/cranbury-chiropractic"                             # empty means the 
 tagline: "Cranbury Chiropractic Center, LLC"
 logo: "/assets/images/logo.png"          # add a file at this path when ready
 
+atom_feed:
+  hide: true
+
 # Social / org metadata for SEO cards
 social:
   name: "Cranbury Chiropractic"
