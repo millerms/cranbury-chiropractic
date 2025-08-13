@@ -55,4 +55,4 @@ Welcome. We help people move better and feel better with clear plans and practic
 {% include feature_row id="feature_row2" type="center" %}
 
 [Request an Appointment](/contact/){: .btn .btn--primary }  
-[Call (203) 555-0123](tel:+12035550123){: .btn }
+[Call (203) 846-3424](tel:+12038463424){: .btn }
